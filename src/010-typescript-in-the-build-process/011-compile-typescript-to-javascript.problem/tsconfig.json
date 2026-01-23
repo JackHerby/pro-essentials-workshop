@@ -1,0 +1,18 @@
+// Couldn't init with --init due to "module": "Preserve"
+// So I copied the config from project's root.
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "Preserve",
+    "noEmit": true,
+    "isolatedModules": true,
+    "moduleDetection": "force",
+    "noUncheckedIndexedAccess": true,
+    "esModuleInterop": true,
+    "strict": true,
+    "skipLibCheck": true,
+  },
+  "include": [
+    "src"
+  ]
+}

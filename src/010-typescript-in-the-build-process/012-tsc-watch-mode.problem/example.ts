@@ -2,4 +2,4 @@ const run = (message: string) => {
   console.log(message);
 };
 
-run("Hello!");
+run("Hello made with tsc --watch!");
