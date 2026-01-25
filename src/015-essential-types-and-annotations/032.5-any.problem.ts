@@ -2,7 +2,8 @@ import { expect, it } from "vitest";
 
 const handleFormData = (e: any) => {
   e.preventDefault();
-  const data = new FormData(e.terget);
+  // any prevents type checking, thusly disabling the possibility of finding typos.
+  const data = new FormData(e.target);
   const value = Object.fromEntries(data.entries());
   return value;
 };
