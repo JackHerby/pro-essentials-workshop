@@ -1,6 +1,7 @@
-interface Logger {
-  log(message: string, level: number): void;
-}
+// "no weź mnie wypierdol"
+// interface Logger {
+//   log(message: string, level: number): void;
+// }
 
 interface Logger {
   log(message: string): void;

@@ -1,27 +1,28 @@
 import { expect, it } from "vitest";
 
-type User = {
+type Base = {
   id: string;
   name: string;
+};
+
+type User = {
   age: number;
   imageId: string;
-};
+} & Base;
 
 type Organisation = {
-  id: string;
-  name: string;
   address: string;
   imageId: string;
-};
+} & Base;
 
 type Product = {
-  id: string;
-  name: string;
   price: number;
   imageId: string;
-};
+} & Base;
 
-const getAvatarImage = (entity: unknown) => {
+type Entity = User | Organisation | Product;
+
+const getAvatarImage = (entity: Entity) => {
   {
     // Should not be able to access properties that are
     // not common to both types
