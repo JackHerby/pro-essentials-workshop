@@ -1,4 +1,7 @@
-const shoppingCart = {
+const shoppingCart: {
+  items: string[];
+} = {
+  // empty arrays in TS are never[] by default
   items: [],
 };
 

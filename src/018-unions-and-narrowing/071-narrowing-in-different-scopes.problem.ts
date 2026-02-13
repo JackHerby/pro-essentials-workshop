@@ -8,8 +8,17 @@ const findUsersByName = (
     name: string;
   }[],
 ) => {
-  if (searchParams.name) {
-    return users.filter((user) => user.name.includes(searchParams.name));
+  // saving searchParams.name to a variable solves the issue below
+  // also, works with let
+  // let searchParamsName = searchParams.name
+  const searchParamsName = searchParams.name;
+  if (searchParamsName) {
+    return users.filter((user) => {
+      // in the scope of .filter, searchParams.name loses the narrowing in the if statement
+      // because the callback of .filter may run after searchParams.name has been mutated
+      // that's why saving it to the local variable helps
+      return user.name.includes(searchParamsName);
+    });
   }
 
   return users;

@@ -1,11 +1,37 @@
 import { expect, it } from "vitest";
 
+
 function validateUsername(username: string | null): boolean {
   // Rewrite this function to make the error go away
-  return username.length > 5;
-
-  return false;
+  return !!username && username.length > 5;
 }
+
+// function validateUsername(username: string | null): boolean {
+//   // Rewrite this function to make the error go away
+//   if (!username) {
+//     return false;
+//   }
+//
+//   return username.length > 5;
+// }
+
+// function validateUsername(username: string | null): boolean {
+//   // Rewrite this function to make the error go away
+//   if (username) {
+//     return username.length > 5;
+//   }
+//
+//   return false;
+// }
+
+// function validateUsername(username: string | null): boolean {
+//   // Rewrite this function to make the error go away
+//   if (typeof username === 'string') {
+//     return username.length > 5;
+//   }
+//
+//   return false;
+// }
 
 it("should return true for valid usernames", () => {
   expect(validateUsername("Matt1234")).toBe(true);

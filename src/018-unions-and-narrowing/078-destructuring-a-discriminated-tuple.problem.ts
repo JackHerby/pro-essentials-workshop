@@ -4,7 +4,9 @@ type User = {
   id: string;
 };
 
-type ApiResponse = [string, User[] | string];
+type Error = ['error', string];
+type Success = ['success', User[]]
+type ApiResponse = Error | Success;
 
 async function fetchData(): Promise<ApiResponse> {
   try {
@@ -25,6 +27,7 @@ async function fetchData(): Promise<ApiResponse> {
 }
 
 async function exampleFunc() {
+  // destructuring working with discriminating tuples
   const [status, value] = await fetchData();
 
   if (status === "success") {

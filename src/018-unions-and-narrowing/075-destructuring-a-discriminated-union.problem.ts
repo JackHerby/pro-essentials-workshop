@@ -13,10 +13,14 @@ type Square = {
 
 type Shape = Circle | Square;
 
-function calculateArea({ kind, radius, sideLength }: Shape) {
-  if (kind === "circle") {
+// you can't really destructure with discriminated unions
+// function calculateArea( { kind, radius, sideLength }: Shape) {
+function calculateArea(shape: Shape) {
+  if (shape.kind === "circle") {
+    const { radius } = shape;
     return Math.PI * radius * radius;
   } else {
+    const { sideLength } = shape;
     return sideLength * sideLength;
   }
 }

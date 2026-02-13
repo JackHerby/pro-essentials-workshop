@@ -14,4 +14,8 @@ const getResolvedIconSize = (
 };
 
 // It doesn't give you autocomplete for 'small', 'medium', or 'large'!
+// Unless you make TypeScript wizardry, like below:
+// const getResolvedIconSize = (
+//   iconSize: "small" | "medium" | "large" | (string & {}),
+// ) => {
 getResolvedIconSize("awdawd");
