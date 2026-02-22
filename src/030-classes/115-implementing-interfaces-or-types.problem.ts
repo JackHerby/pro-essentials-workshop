@@ -3,13 +3,18 @@ interface ShapeOptions {
   y: number;
 }
 
-type IShape = {
+// type IShape = {
+//   position: { x: number; y: number };
+//   move: (deltaX: number, deltaY: number) => void;
+// };
+
+interface IShape {
   position: { x: number; y: number };
   move: (deltaX: number, deltaY: number) => void;
-};
+}
 
 // How do we ensure our Shape class matches IShape?
-class Shape {
+class Shape implements IShape {
   #x: number;
   #y: number;
 

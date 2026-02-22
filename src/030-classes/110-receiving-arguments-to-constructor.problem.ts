@@ -1,8 +1,18 @@
 import { expect, it } from "vitest";
 
+type InitialPosition = { x: number; y: number };
+
 class CanvasNode {
-  x = 0;
-  y = 0;
+  // x: number;
+  // y: number;
+  // Due to the constructor annotations, you don't need to type  x and y.
+  x;
+  y;
+
+  constructor(initalPosition?: InitialPosition) {
+    this.x = initalPosition?.x || 0;
+    this.y = initalPosition?.y || 0;
+  }
 
   move(x: number, y: number) {
     this.x = x;
