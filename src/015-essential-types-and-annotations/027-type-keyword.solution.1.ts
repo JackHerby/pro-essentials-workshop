@@ -2,11 +2,17 @@ import { Expect, Equal } from "@total-typescript/helpers";
 import { expect, it } from "vitest";
 
 type Rectangle = { width: number; height: number };
+// Or extract the type to a separate file and import it (solutions 2 and 3).
 
+// const getRectangleArea = (rectangle: { width: number; height: number }) => {
 const getRectangleArea = (rectangle: Rectangle) => {
   return rectangle.width * rectangle.height;
 };
 
+// const getRectanglePerimeter = (rectangle: {
+//   width: number;
+//   height: number;
+// }) => {
 const getRectanglePerimeter = (rectangle: Rectangle) => {
   return 2 * (rectangle.width + rectangle.height);
 };

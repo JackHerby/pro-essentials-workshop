@@ -5,6 +5,7 @@ type User = {
 
 type MakeChangeFunc = (user: User) => User;
 
+// const modifyUser = (users: User[], id: string, makeChange) => {
 const modifyUser = (users: User[], id: string, makeChange: MakeChangeFunc) => {
   return users.map((u) => {
     if (u.id === id) {

@@ -2,7 +2,11 @@
 
 type User = { name: string; age: number };
 
-const userMap = new Map<number, User>();
+// const userMap = new Map();
+// const userMap = new Map<number, User>();
+// const userMap = new Map<number, { name: string; age: number }>();
+// const userMap: Map<number, User> = new Map();
+const userMap: Map<number, { name: string; age: number }> = new Map();
 
 // TESTS
 
