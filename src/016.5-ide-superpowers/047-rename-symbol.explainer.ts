@@ -7,6 +7,9 @@ const users = [
 // Imagine this function was 10x bigger
 // with 10x more references to `id`
 
+// const filterUsersById = (id: string) => {
+//   return users.filter((user) => user.id === id);
+// };
 // How do we change id to userId?
 const filterUsersById = (userIdToFilter: string) => {
   return users.filter((user) => user.id === userIdToFilter);
