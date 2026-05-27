@@ -1,3 +1,4 @@
+// const shoppingCart = {
 const shoppingCart: {
   items: string[];
 } = {

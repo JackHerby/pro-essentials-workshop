@@ -11,8 +11,12 @@ try {
 } catch (error) {
   // How do we change this code to make it
   // not show a red squiggly?
+  // if (true) {
+  //   console.error(error.message);
+  // }
   if (error instanceof Error) {
     console.error(error.message);
   }
+  // Throws "unknown" errors, for example when function throws a string rather than Error instance.
   throw error
 }
