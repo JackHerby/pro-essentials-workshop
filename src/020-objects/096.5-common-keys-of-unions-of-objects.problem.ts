@@ -1,5 +1,26 @@
 import { expect, it } from "vitest";
 
+// type User = {
+//   id: string;
+//   name: string;
+//   age: number;
+//   imageId: string;
+// };
+//
+// type Organisation = {
+//   id: string;
+//   name: string;
+//   address: string;
+//   imageId: string;
+// };
+//
+// type Product = {
+//   id: string;
+//   name: string;
+//   price: number;
+//   imageId: string;
+// };
+
 type Base = {
   id: string;
   name: string;
@@ -22,6 +43,7 @@ type Product = {
 
 type Entity = User | Organisation | Product;
 
+// const getAvatarImage = (entity: unknown) => {
 const getAvatarImage = (entity: Entity) => {
   {
     // Should not be able to access properties that are

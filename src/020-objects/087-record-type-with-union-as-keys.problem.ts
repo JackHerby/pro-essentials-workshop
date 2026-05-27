@@ -4,6 +4,7 @@ type Configuration = {
   timeout: number;
 };
 
+// type Configurations = unknown;
 // type Configurations = Record<Environment, Configuration>;
 // or more advanced, using mapped type
 type Configurations = { [Env in Environment]: Configuration };
