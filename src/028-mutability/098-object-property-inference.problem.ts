@@ -5,6 +5,7 @@ type ButtonAttributes = {
 const modifyButton = (attributes: ButtonAttributes) => {};
 
 // object properties can be mutated, so they are inferred as wider type, e.g. string
+// const buttonAttributes = {
 const buttonAttributes: ButtonAttributes = {
   type: "button",
 };
@@ -12,7 +13,7 @@ const buttonAttributes: ButtonAttributes = {
 modifyButton(buttonAttributes);
 
 // Example 2
-
+// const buttonsToChange = [
 const modifyButtons = (attributes: ButtonAttributes[]) => {};
 
 const buttonsToChange: ButtonAttributes[] = [

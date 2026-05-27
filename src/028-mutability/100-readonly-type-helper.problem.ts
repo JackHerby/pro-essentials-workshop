@@ -6,6 +6,7 @@ type SearchParams = {
   order?: "asc" | "desc";
 };
 
+// const handleSearchParams = (search: SearchParams) => {
 const handleSearchParams = (search: Readonly<SearchParams>) => {
   // Do something with the search params
 

@@ -1,3 +1,4 @@
+// type Coordinate = [number, number];
 type Coordinate = readonly [number, number];
 const myHouse: Coordinate = [0, 0];
 

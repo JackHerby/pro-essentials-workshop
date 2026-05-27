@@ -11,6 +11,14 @@ type ButtonAttributes = {
 
 const modifyButtons = (attributes: ButtonAttributes) => {};
 
+//const buttonAttributes = Object.freeze({
+//   cancel: {
+//     type: "button",
+//   },
+//   confirm: {
+//     type: "button",
+//   },
+// });
 // Apparently the solution is not to use Object.freeze, and use as const instead.
 // I've found a couple of things working, though.
 // Object.freeze works only on the top level.

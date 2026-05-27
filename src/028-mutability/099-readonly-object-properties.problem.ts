@@ -1,4 +1,5 @@
 type User = {
+  // id: number;
   readonly id: number;
   name: string;
   age: number;
