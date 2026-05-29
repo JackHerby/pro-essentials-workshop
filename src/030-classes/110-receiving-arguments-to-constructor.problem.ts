@@ -3,6 +3,8 @@ import { expect, it } from "vitest";
 type InitialPosition = { x: number; y: number };
 
 class CanvasNode {
+  // x = 0;
+  // y = 0;
   // x: number;
   // y: number;
   // Due to the constructor annotations, you don't need to type  x and y.

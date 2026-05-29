@@ -16,6 +16,7 @@ class CanvasNode {
     };
   }
 
+  // solution
   // set position({ x, y }: { x: number; y: number }) {
   //   this.#x = x;
   //   this.#y = y;

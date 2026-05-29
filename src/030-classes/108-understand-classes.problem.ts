@@ -1,5 +1,6 @@
 import { expect, it } from "vitest";
 
+// class CanvasNode {}
 // class CanvasNode {
 //   readonly x: number;
 //   readonly y: number;

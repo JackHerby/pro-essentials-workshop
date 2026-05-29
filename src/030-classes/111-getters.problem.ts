@@ -14,6 +14,7 @@ class CanvasNode {
     this.y = y;
   }
 
+  // solution
   get position() {
     return { x: this.x, y: this.y };
   }
