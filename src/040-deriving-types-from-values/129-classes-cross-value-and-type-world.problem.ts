@@ -13,6 +13,7 @@ class CanvasNode {
 // NOTE: typeof CanvasNodeType describes the type of constructor function, not object instance
 // type CanvasNodeType = typeof CanvasNode
 
+// const positionFromCanvasNode = (node) => {
 const positionFromCanvasNode = (node: CanvasNode) => {
 // NOTE: also possible:
 // const positionFromCanvasNode = (node: { x: number, y: number }) => {

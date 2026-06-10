@@ -7,6 +7,7 @@ interface FormValues {
 }
 
 const inputs: Record<
+  // "name" | "email" | "password",
   keyof FormValues,
   {
     initialValue: string;

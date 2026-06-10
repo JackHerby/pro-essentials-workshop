@@ -9,6 +9,7 @@ export const programModeEnumMap = {
   PLANNED_SELF_DIRECTED: "plannedSelfDirected",
 } as const;
 
+// type PlannedPrograms = unknown;
 type ProgramModeMap = typeof programModeEnumMap;
 
 // How do we make sure PlannedPrograms stays in sync with programModeEnumMap?
