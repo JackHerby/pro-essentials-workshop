@@ -2,16 +2,30 @@ import { Equal, Expect } from "@total-typescript/helpers";
 
 // CODE
 
-const isProblemOrSolution = (filename: string): boolean => {
-  const splitFilename: string[] = filename.split(".");
+// const isProblemOrSolution = (filename: string): boolean => {
+//   const splitFilename: string[] = filename.split(".");
+//
+//   const finalIndex: number = splitFilename.length - 1;
+//
+//   const extension: string | undefined = splitFilename[finalIndex];
+//
+//   const isProblem: boolean = extension === "problem";
+//
+//   const isSolution: boolean = extension === "solution";
+//
+//   return isProblem || isSolution;
+// };
 
-  const finalIndex: number = splitFilename.length - 1;
+const isProblemOrSolution = (filename: string) => {
+  const splitFilename = filename.split(".");
 
-  const extension: string | undefined = splitFilename[finalIndex];
+  const finalIndex = splitFilename.length - 1;
 
-  const isProblem: boolean = extension === "problem";
+  const extension = splitFilename[finalIndex];
 
-  const isSolution: boolean = extension === "solution";
+  const isProblem = extension === "problem";
+
+  const isSolution = extension === "solution";
 
   return isProblem || isSolution;
 };
@@ -24,9 +38,17 @@ type test1 = Expect<
 
 // CODE
 
-const users: {
-  name: string;
-}[] = [
+// const users: {
+//   name: string;
+// }[] = [
+//   {
+//     name: "Waqas",
+//   },
+//   {
+//     name: "Zain",
+//   },
+// ];
+const users = [
   {
     name: "Waqas",
   },
@@ -35,20 +57,22 @@ const users: {
   },
 ];
 
-const usersWithIds: {
-  id: number;
-  name: string;
-}[] = users.map(
-  (
-    user: {
-      name: string;
-    },
-    index: number,
-  ) => ({
-    ...user,
-    id: index,
-  }),
-);
+
+// const usersWithIds: {
+//   id: number;
+//   name: string;
+// }[] = users.map(
+//   (
+//     user: {
+//       name: string;
+//     },
+//     index: number,
+//   ) => ({
+//     ...user,
+//     id: index,
+//   }),
+// );
+const usersWithIds = users.map((user, index) => ({ ...user, id: index }));
 
 // TESTS
 
