@@ -5,7 +5,35 @@ interface FetchOptions {
   body?: string;
 }
 
-const options = {
+// const options = {
+//   url: "/",
+//   method: "GET",
+//   headers: {
+//     "Content-Type": "application/json",
+//   },
+//   // @ts-expect-error
+//   search: new URLSearchParams({
+//     limit: "10",
+//   }),
+// };
+
+const myFetch = async (options: FetchOptions) => {};
+
+// myFetch(options);
+
+myFetch({
+  url: "/",
+  method: "GET",
+  headers: {
+    "Content-Type": "application/json",
+  },
+  // @ts-expect-error
+  search: new URLSearchParams({
+    limit: "10",
+  }),
+});
+
+const options: FetchOptions = {
   url: "/",
   method: "GET",
   headers: {
@@ -17,6 +45,18 @@ const options = {
   }),
 };
 
-const myFetch = async (options: FetchOptions) => {};
-
 myFetch(options);
+
+const options2 = {
+  url: "/",
+  method: "GET",
+  headers: {
+    "Content-Type": "application/json",
+  },
+  // @ts-expect-error
+  search: new URLSearchParams({
+    limit: "10",
+  }),
+} satisfies FetchOptions;
+
+myFetch(options2)

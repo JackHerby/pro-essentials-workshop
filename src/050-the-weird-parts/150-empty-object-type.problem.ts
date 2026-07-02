@@ -1,3 +1,4 @@
+// const acceptAnythingExceptNullOrUndefined = (input) => {};
 const acceptAnythingExceptNullOrUndefined = (input: {}) => {};
 
 acceptAnythingExceptNullOrUndefined("hello");

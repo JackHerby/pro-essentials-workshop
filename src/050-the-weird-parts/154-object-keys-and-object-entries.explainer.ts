@@ -22,6 +22,7 @@ const usersWithIds: User[] = users.map((user, index) => ({
 
 const userKeys = usersWithIds.map((user) => {
   const keys = Object.keys(user);
+  const entries = Object.entries(user);
 
   type test = Expect<Equal<typeof keys, Array<"id" | "name">>>;
   return keys;
