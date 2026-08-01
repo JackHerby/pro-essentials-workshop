@@ -1,6 +1,10 @@
 {
   "compilerOptions": {
-    "target": "ES5",
+    // "target": "ES5",
+    // solution 1
+    "target": "ES2024",
+    // solution 2
+    "lib": ["ES2024"],
     "module": "NodeNext",
     "moduleResolution": "NodeNext",
     "esModuleInterop": true,

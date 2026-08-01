@@ -5,6 +5,10 @@
     "moduleResolution": "Bundler",
     "esModuleInterop": true,
     "declaration": true,
+    // NOTE: solution:
+    // Speeds up type checking in the code base by excluding all .d.ts files, including node_modules.
+    // Unfortunately, there is no option for excluding .d.ts only in node_modules.
+    // "skipLibCheck": false,
     "skipLibCheck": true,
     "noEmit": true,
     "strict": true,

@@ -11,6 +11,8 @@
     "lib": [
       "ES2022",
       "DOM",
+      // solution
+      "DOM.Iterable",
     ]
   },
 }

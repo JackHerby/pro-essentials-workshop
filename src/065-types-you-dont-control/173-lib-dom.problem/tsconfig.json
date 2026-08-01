@@ -8,8 +8,11 @@
     "strict": true,
     "skipLibCheck": true,
     "isolatedModules": true,
+    // If you remove lib entirely, ES2022 and DOM are added automatically, based on the target.
     "lib": [
-      "ES2022"
+      "ES2022",
+      // solution below
+      "DOM",
     ]
   },
 }
