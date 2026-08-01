@@ -3,3 +3,6 @@
 3. Add a `"references"` field to the `tsconfig.json` which references the `client` and `server` `tsconfig.json` files.
 4. Investigate the `"composite": true` field, and figure out how to add it to `client` and `server`.
 5. Investigate what `tsc -b` does, and figure out whether you need to add it anywhere.
+
+I'm not going to copy and paste the solution for configuration setting.
+It's waaaay to boring to bother. Just watched the solution.

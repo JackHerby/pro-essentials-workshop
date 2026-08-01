@@ -1,13 +1,13 @@
 {
   "compilerOptions": {
     "target": "ES2022",
-    "module": "NodeNext",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
     "esModuleInterop": true,
+    "noEmit": true,
     "strict": true,
     "skipLibCheck": true,
     "isolatedModules": true,
-    "outDir": "./dist",
-    // solution
-    "verbatimModuleSyntax": true,
-  },
+    "lib": ["ES2022"]
+  }
 }

@@ -10,5 +10,9 @@
     "skipLibCheck": true,
     "isolatedModules": true,
     "moduleDetection": "force",
-  },
+    // solution
+    // "jsx": "react-jsx"
+    // "jsx": "react-jsxdev"
+    "jsx": "preserve"
+  }
 }

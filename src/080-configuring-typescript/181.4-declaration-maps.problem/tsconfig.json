@@ -10,7 +10,9 @@
     "skipLibCheck": true,
     "isolatedModules": true,
     "moduleDetection": "force",
-    "declaration": true
+    "declaration": true,
+    // solution
+    "declarationMap": true
   },
   "include": [
     "src"
