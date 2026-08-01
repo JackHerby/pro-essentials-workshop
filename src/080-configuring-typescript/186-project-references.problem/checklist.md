@@ -4,5 +4,6 @@
 4. Investigate the `"composite": true` field, and figure out how to add it to `client` and `server`.
 5. Investigate what `tsc -b` does, and figure out whether you need to add it anywhere.
 
+Solution:
 I'm not going to copy and paste the solution for configuration setting.
 It's waaaay to boring to bother. Just watched the solution.
